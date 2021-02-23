@@ -12,7 +12,7 @@ function animateButton(buttonColour, clickedByUser = false) {
         }, 100);
     }
     else
-        $("#" + buttonColour).fadeOut(100).fadeIn(100);    //verify
+        $("#" + buttonColour).fadeIn(100).fadeOut(100).fadeIn(100);
 }
 
 function playButton(buttonColour) {
