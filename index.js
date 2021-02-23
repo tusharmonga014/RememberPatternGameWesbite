@@ -1,5 +1,5 @@
 var buttonColours = ["red", "blue", "green", "yellow"];
-var gamePattern = [];
+var gamePattern;
 var level;
 var gameGoingOn = false;
 var userPatternClickNumber;    //tells the no of colour user has to press currently
@@ -36,6 +36,7 @@ function updateLevel() {
 function startGame() {
     level = 0;
     gameGoingOn = true;
+    gamePattern = [];
     updateLevel();
     setTimeout(function () {
         nextSequence();
